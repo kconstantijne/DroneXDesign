@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Цифрова платформа гуртків Вартові неба та Re:Fly">
+  <title>Вартові неба × Re:Fly — простір ідей та технологій</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="На головну"><span class="brand-mark">✳</span><span>LAB<span class="brand-muted"> / </span>SPACE</span></a>
+    <nav class="nav" aria-label="Головна навігація">
+      <a href="#clubs">Гуртки</a><a href="#projects">Проєкти</a><a href="#achievements">Досягнення</a><a href="#about">Про нас</a>
+    </nav>
+    <button class="edit-toggle" id="editToggle">✎ Редагувати</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> ОСВІТНІЙ ПРОСТІР ДВОХ ГУРТКІВ</div>
+        <h1 data-editable>Ідеї набувають<br><span class="gradient-blue">форми.</span><br>Технології — <span class="gradient-purple">сенсу.</span></h1>
+        <p class="hero-lead" data-editable>Місце, де цікавість перетворюється на навички, експерименти — на досвід, а творчість — на реальні проєкти.</p>
+        <div class="hero-actions"><a class="btn btn-light" href="#clubs">Відкрити простір <span>↗</span></a><a class="text-link" href="#projects">Переглянути роботи <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span data-editable>Два напрями. Один простір для розвитку.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Абстрактна композиція технологій і дизайну">
+        <div class="orb orb-blue"></div><div class="orb orb-purple"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-chip chip-top">LEARN / CREATE</div><div class="art-chip chip-bottom">IDEAS IN MOTION ↗</div>
+        <div class="art-cross">✳</div><div class="art-label">01 — 02</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span>КРЕАТИВ • ТЕХНОЛОГІЇ • КОМАНДА</span></div>
+    </section>
+
+    <section class="clubs section-wrap" id="clubs">
+      <div class="section-heading"><div><div class="eyebrow">01 / НАШІ НАПРЯМИ</div><h2>Обери свій <span>простір.</span></h2></div><p>Різні інструменти — спільне прагнення створювати, досліджувати й розвиватися.</p></div>
+      <div class="club-grid">
+        <article class="club-card sky-card">
+          <div class="club-top"><span class="club-number">01 / FLIGHT LAB</span><span class="round-arrow">↗</span></div>
+          <div class="drone-graphic"><div class="drone-core">✳</div><i class="arm a1"></i><i class="arm a2"></i><i class="arm a3"></i><i class="arm a4"></i><span class="prop p1"></span><span class="prop p2"></span><span class="prop p3"></span><span class="prop p4"></span></div>
+          <h3 data-editable>Вартові неба</h3><p class="club-subtitle" data-editable>FPV • Авіамоделювання • Технології</p>
+          <p data-editable>Досліджуємо принципи польоту, знайомимося з будовою FPV-дронів, вивчаємо симулятори та культуру безпечного використання технологій.</p>
+          <div class="tag-row"><span>ТЕХНІКА</span><span>ПРАКТИКА</span><span>КОМАНДА</span></div>
+          <a href="#projects" class="club-link">Дослідити напрям <span>→</span></a>
+        </article>
+        <article class="club-card violet-card">
+          <div class="club-top"><span class="club-number">02 / CREATIVE LAB</span><span class="round-arrow">↗</span></div>
+          <div class="design-graphic"><div class="shape shape-a"></div><div class="shape shape-b"></div><div class="shape shape-c"></div><span>re:think<br>re:make<br>re:fly</span></div>
+          <h3 data-editable>Re:Fly</h3><p class="club-subtitle" data-editable>Графічний дизайн • Візуальна комунікація</p>
+          <p data-editable>Перетворюємо ідеї на візуальні історії: створюємо плакати, логотипи, ілюстрації, досліджуємо колір, композицію та типографіку.</p>
+          <div class="tag-row"><span>ДИЗАЙН</span><span>КРЕАТИВ</span><span>ПОРТФОЛІО</span></div>
+          <a href="#projects" class="club-link">Переглянути роботи <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-heading"><div><div class="eyebrow">02 / МАЙСТЕРНЯ РОБІТ</div><h2>Створено <span>учасниками.</span></h2></div><p>Навчальні спроби, творчі експерименти та проєкти, якими ми пишаємося.</p></div>
+      <div class="filters" role="group" aria-label="Фільтр проєктів"><button class="filter active" data-filter="all">Усі роботи</button><button class="filter" data-filter="sky">Вартові неба</button><button class="filter" data-filter="refly">Re:Fly</button></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="sky"><div class="project-visual visual-blue"><span class="visual-index">01</span><div class="blueprint-drone">✳</div><span class="visual-caption">FLIGHT / STUDY</span></div><div class="project-info"><div><span class="project-type">ВАРТОВІ НЕБА</span><h3 data-editable>Будова FPV-дрона</h3></div><span class="project-arrow">↗</span><p data-editable>Навчальна інфографіка: основні компоненти та їх призначення.</p><a class="project-open" href="pages/budova.html">Відкрити сторінку <span>↗</span></a></div></article>
+        <article class="project-card" data-category="refly"><div class="project-visual visual-pink"><span class="visual-index">02</span><div class="poster-word">MAKE<br>IT<br>MATTER.</div><span class="visual-caption">VISUAL / POSTER</span></div><div class="project-info"><div><span class="project-type">REFLY</span><h3 data-editable>Плакатна композиція</h3></div><span class="project-arrow">↗</span><p data-editable>Експерименти з типографікою, кольором і візуальним ритмом.</p><a class="project-open" href="pages/poster.html">Відкрити сторінку <span>↗</span></a></div></article>
+        <article class="project-card" data-category="sky"><div class="project-visual visual-dark"><span class="visual-index">03</span><div class="route-art"><span>START</span><b>↗</b><i></i><span>FINISH</span></div><span class="visual-caption">SIMULATOR / PRACTICE</span></div><div class="project-info"><div><span class="project-type">ВАРТОВІ НЕБА</span><h3 data-editable>Траєкторія польоту</h3></div><span class="project-arrow">↗</span><p data-editable>Інтерактивний матеріал про траєкторії, умови та відповідальне планування.</p><a class="project-open" href="pages/trajectory.html">Відкрити сторінку <span>↗</span></a></div></article>
+        <article class="project-card" data-category="refly"><div class="project-visual visual-yellow"><span class="visual-index">04</span><div class="brand-art">R<span>:</span>F</div><span class="visual-caption">IDENTITY / CONCEPT</span></div><div class="project-info"><div><span class="project-type">REFLY</span><h3 data-editable>Візуальна айдентика</h3></div><span class="project-arrow">↗</span><p data-editable>Пошук символу, кольорової системи та характеру бренду.</p><a class="project-open" href="pages/identity.html">Відкрити сторінку <span>↗</span></a></div></article>
+      </div>
+      <div class="project-foot"><span>ПОКАЗУЄМО ПРОЦЕС, А НЕ ЛИШЕ РЕЗУЛЬТАТ</span><button class="add-project edit-only" id="addProject">＋ Додати проєкт</button></div>
+    </section>
+
+    <section class="achievements section-wrap" id="achievements">
+      <div class="achievement-heading">
+        <div><div class="eyebrow">03 / НАШ РУХ УПЕРЕД</div><h2>Кожен крок —<br><span>це досягнення.</span></h2></div>
+        <p data-editable>Великі результати починаються з маленьких кроків. Збираємо тут наші роботи, творчі пошуки та моменти, якими хочеться пишатися.</p>
+      </div>
+      <div class="achievement-carousel" aria-roledescription="карусель" aria-label="Роботи та досягнення учасників">
+        <div class="achievement-track" id="achievementTrack" tabindex="0">
+          <article class="achievement-slide is-active" aria-label="1 з 3">
+            <div class="achievement-image"><img src="assets/achievement-space.jpeg" alt="Архітектурна ілюстрація сучасного освітнього простору в синьо-жовтих кольорах" loading="lazy"><span class="slide-index">01 / 03</span></div>
+            <div class="achievement-caption"><div><span class="achievement-kicker">ПРОСТІР ДЛЯ ІДЕЙ · ВІЗУАЛЬНА КОНЦЕПЦІЯ</span><h3 data-editable>Місце, де народжується майбутнє</h3><p data-editable>Уявляємо простір, у якому навчання, технології та творчість формують нові можливості.</p></div><span class="achievement-mark">↗</span></div>
+          </article>
+          <article class="achievement-slide" aria-label="2 з 3" aria-hidden="true">
+            <div class="achievement-image"><img src="assets/achievement-city.png" alt="Художня композиція з міською вулицею Запоріжжя" loading="lazy"><span class="slide-index">02 / 03</span></div>
+            <div class="achievement-caption"><div><span class="achievement-kicker">ЗАПОРІЖЖЯ · МІСЬКА ІСТОРІЯ</span><h3 data-editable>Місто, яке надихає</h3><p data-editable>Помічаємо красу знайомих вулиць і передаємо характер рідного міста мовою дизайну.</p></div><span class="achievement-mark">↗</span></div>
+          </article>
+          <article class="achievement-slide" aria-label="3 з 3" aria-hidden="true">
+            <div class="achievement-image"><img src="assets/achievement-river.png" alt="Художня композиція з річкою Дніпро та греблею" loading="lazy"><span class="slide-index">03 / 03</span></div>
+            <div class="achievement-caption"><div><span class="achievement-kicker">СПАДЩИНА КРАЮ · НАТХНЕННЯ</span><h3 data-editable>Сила рідного краю</h3><p data-editable>Досліджуємо місця, які творять історію Запоріжжя, і перетворюємо враження на візуальні історії.</p></div><span class="achievement-mark">↗</span></div>
+          </article>
+        </div>
+        <div class="achievement-controls">
+          <div class="achievement-dots" id="achievementDots" role="group" aria-label="Обрати роботу">
+            <button class="achievement-dot active" type="button" aria-label="Перша робота" aria-current="true" data-slide="0"></button>
+            <button class="achievement-dot" type="button" aria-label="Друга робота" data-slide="1"></button>
+            <button class="achievement-dot" type="button" aria-label="Третя робота" data-slide="2"></button>
+          </div>
+          <div class="achievement-arrows"><button type="button" id="achievementPrev" aria-label="Попередня робота">←</button><button type="button" id="achievementNext" aria-label="Наступна робота">→</button></div>
+          <span class="achievement-counter" id="achievementCounter">01 <i>/</i> 03</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-left"><div class="eyebrow">04 / ПРО НАС</div><h2>Навчання, яке<br>залишає <span>слід.</span></h2></div>
+      <div class="about-right"><p data-editable>«Вартові неба» та Re:Fly — це простір для допитливих, творчих і сміливих. Тут можна ставити запитання, пробувати нове, помилятися, знаходити рішення та бачити, як власні ідеї стають реальністю.</p><div class="about-signature">ТВОРИМО МАЙБУТНЄ РАЗОМ <span>✳</span></div></div>
+    </section>
+
+    <section class="contact section-wrap">
+      <div><div class="eyebrow">05 / ПРИЄДНУЙСЯ ДО НАС</div><h2>Твоя ідея може<br>стати <span>наступною.</span></h2></div>
+      <div class="contact-box"><p data-editable>Хочеш дізнатися більше про гуртки або побачити наші роботи наживо?</p><a href="pages/author.html" class="btn btn-dark" data-editable>Зв'язатися з керівником ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">✳</span><span>LAB<span class="brand-muted"> / </span>SPACE</span></a><span>ВАРТОВІ НЕБА × Re:Fly</span><a href="pages/author.html">АВТОР ПРОЄКТУ ↗</a><span>© <span id="year"></span> • ОСВІТНІЙ ПРОСТІР</span></footer>
+  <div class="edit-bar" id="editBar"><span><b>Режим редагування</b> — натисни на текст, щоб змінити його</span><div><button id="saveEdits" class="save-btn">Зберегти зміни</button><button id="cancelEdits" class="cancel-btn">Вийти</button></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

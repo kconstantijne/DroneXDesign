@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сторінка автора освітнього простору LAB / SPACE — Вартові неба та Re:Fly.">
+  <title>Автор — LAB / SPACE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="author.css">
+</head>
+<body class="author-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="На головну"><span class="brand-mark">✳</span><span>LAB<span class="brand-muted"> / </span>SPACE</span></a>
+    <nav class="nav" aria-label="Головна навігація">
+      <a href="../index.html#clubs">Гуртки</a><a href="../index.html#projects">Проєкти</a><a href="../index.html#achievements">Досягнення</a><a href="../index.html#about">Про нас</a>
+    </nav>
+    <a class="author-home-link" href="../index.html">← На головну</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="author-hero section-wrap">
+      <div class="author-copy">
+        <div class="eyebrow"><span class="author-live-dot"></span> ЗА ЛАШТУНКАМИ LAB / SPACE</div>
+        <p class="author-overline">АВТОР ОСВІТНЬОГО ПРОСТОРУ</p>
+        <h1>Привіт,<br>я <span>Костянтин.</span></h1>
+        <p class="author-lead">Створюю простір, у якому освіта зустрічається з технологіями, а ідеї перетворюються на реальні проєкти.</p>
+        <p class="author-note">Ця платформа об’єднує два напрями — «Вартові неба» та Re:Fly. Тут важливі допитливість, практика, творчість і сміливість пробувати нове.</p>
+        <a class="author-cta" href="#socials">Знайти мене в мережі <span>↓</span></a>
+      </div>
+      <div class="author-art-wrap">
+        <img src="../assets/author-artwork.png" alt="Геометрична композиція з великою літерою K у синіх, жовтих і темних тонах">
+        <span class="author-art-index">K / 2026</span>
+        <span class="author-art-caption">IDEAS · EDUCATION · DESIGN</span>
+      </div>
+    </section>
+
+    <section class="author-principles section-wrap">
+      <div class="eyebrow">01 / МОЯ ФІЛОСОФІЯ</div>
+      <div class="principle-grid">
+        <article><span>01</span><h2>Досліджувати</h2><p>Не зупинятися на готових відповідях, ставити запитання та відкривати нові можливості.</p></article>
+        <article><span>02</span><h2>Створювати</h2><p>Перетворювати знання й натхнення на власні ідеї, візуальні рішення та технологічні проєкти.</p></article>
+        <article><span>03</span><h2>Ділитися</h2><p>Підтримувати цікавість, обмінюватися досвідом і допомагати іншим зростати через практику.</p></article>
+      </div>
+    </section>
+
+    <section class="author-socials section-wrap" id="socials">
+      <div class="social-heading"><div class="eyebrow">02 / БУДЬМО НА ЗВ’ЯЗКУ</div><h2>Продовжимо<br><span>спілкування?</span></h2><p>Стеж за оновленнями, переглядай роботи та пиши мені у зручній соціальній мережі.</p></div>
+      <div class="social-links">
+        <a class="social-card instagram-card" href="https://www.instagram.com/kconstantijne/" target="_blank" rel="noopener noreferrer">
+          <span class="social-symbol">◎</span><span class="social-meta">INSTAGRAM</span><strong>@kconstantijne</strong><span class="social-arrow">↗</span>
+        </a>
+        <a class="social-card telegram-card" href="https://t.me/constantijne_work" target="_blank" rel="noopener noreferrer">
+          <span class="social-symbol">↗</span><span class="social-meta">TELEGRAM</span><strong>@constantijne_work</strong><span class="social-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="../index.html"><span class="brand-mark">✳</span><span>LAB<span class="brand-muted"> / </span>SPACE</span></a><span>АВТОРСЬКИЙ ОСВІТНІЙ ПРОСТІР</span><span>© <span id="year"></span> • КОСТЯНТИН</span></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuButton = document.getElementById('menuToggle');
+    const nav = document.querySelector('.nav');
+    menuButton.addEventListener('click', () => {
+      const opened = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(opened));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
