@@ -1,0 +1,60 @@
+body.lesson-page{background:#f5f7fb;color:#172033}.lesson-page .site-header{background:#fbfcfd;border-color:#dce3e9}.lesson-hero{padding:55px 10% 65px;background:linear-gradient(120deg,#eaf3f7,#f8fafc)}.lesson-page.refly .lesson-hero{background:linear-gradient(120deg,#f5f0e5,#faf9f5)}.lesson-hero>a{font-size:12px;color:#68758a}.lesson-kicker,.lesson-heading>span{font:10px 'DM Mono';letter-spacing:.13em;color:#087f91;margin-top:42px}.lesson-page.refly .lesson-kicker,.lesson-page.refly .lesson-heading>span{color:#e65e43}.lesson-hero h1{font-size:clamp(48px,7vw,84px);letter-spacing:-.07em;margin:18px 0}.lesson-hero p{max-width:700px;color:#647187;line-height:1.8}.lesson-meta{font:10px 'DM Mono';color:#77849a;margin-top:22px}.lesson-content{padding:65px 10%;max-width:1400px;margin:auto}.lesson-heading{margin:50px 0 22px}.lesson-heading:first-child{margin-top:0}.lesson-heading h2{font-size:32px;margin:8px 0}.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.concept,.activity,.quiz{background:white;border:1px solid #dfe6eb;border-radius:15px;padding:22px}.concept{min-height:140px}.concept span{font:10px 'DM Mono';color:#97a2af}.concept h3{margin:15px 0 7px;font-size:16px}.concept p{margin:0;color:#6c7889;font-size:12px;line-height:1.65}.activity{box-shadow:0 10px 30px #1e30460b}.activity button,.answers button{border:1px solid #d9e2e8;background:#f6f9fa;border-radius:9px;padding:11px 14px;cursor:pointer;color:#26344a;margin:4px}.activity button:hover,.answers button:hover{border-color:#087f91}.parts,.controls,.answers{display:flex;flex-wrap:wrap;gap:8px}.activity p{color:#087f91;font-size:13px}.quiz h3{margin-top:0}.answers{display:grid;grid-template-columns:1fr 1fr}.answers button{text-align:left;margin:0}.answers button.correct{background:#e3f5eb;border-color:#46a879}.answers button.wrong{background:#fff0ec;border-color:#e87960}#feedback{min-height:22px;color:#087f91;font-weight:700;font-size:13px}#retry{border:0;background:none;text-decoration:underline;color:#718096;cursor:pointer}.return{display:inline-block;margin:35px 0;color:#087f91;font-weight:700;font-size:12px}.sim-grid{height:260px;position:relative;margin:20px 0;background:linear-gradient(#dce6ec 1px,transparent 1px),linear-gradient(90deg,#dce6ec 1px,transparent 1px);background-size:10% 10%;background-color:#f1f6f8;border:1px solid #dce6ec;border-radius:12px}.sim-grid #drone{position:absolute;left:10%;top:80%;font-size:28px;color:#087f91;transition:.15s}.target{position:absolute;right:8%;top:8%;font-size:32px;color:#e65e43}.palette{height:80px;display:flex;margin-top:18px;border-radius:10px;overflow:hidden}.palette i{flex:1}.font-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.font-options button{font-size:19px;font-weight:700}.font-options small{font-size:10px;font-weight:400}.font-options button:nth-child(2){font-family:Georgia,serif}.font-options button:nth-child(3){font-family:monospace}#poster{height:240px;background:#d9ed91;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:50px;line-height:.85;font-weight:800;letter-spacing:-.08em;margin-top:18px}#poster small{font:10px 'DM Mono';letter-spacing:.1em;margin-top:20px}#poster.asym{align-items:flex-start;padding-left:12%}#poster.grid{align-items:flex-end;padding-right:12%;background:repeating-linear-gradient(0deg,#d9ed91,#d9ed91 24px,#c9e17c 25px)}.site-footer{padding:25px 7%}@media(max-width:700px){.lesson-hero,.lesson-content{padding-left:7%;padding-right:7%}.concept-grid{grid-template-columns:1fr 1fr}.answers,.font-options{grid-template-columns:1fr}}@media(max-width:460px){.concept-grid{grid-template-columns:1fr}}
+
+
+/* App download links — FeelFPV */
+.app-download{display:flex;align-items:center;justify-content:space-between;gap:28px;margin:28px 0 54px;padding:28px;background:linear-gradient(120deg,#eaf4f7,#f7fafb);border:1px solid #dce8ec;border-radius:18px}
+.app-download-copy{max-width:470px}
+.app-download-kicker{font:10px 'DM Mono',monospace;letter-spacing:.13em;color:#087f91}
+.app-download h3{font-size:clamp(21px,3vw,28px);letter-spacing:-.04em;margin:10px 0 8px;color:#172033}
+.app-download p{font-size:13px;line-height:1.7;color:#647187;margin:0}
+.app-download-actions{display:flex;flex-wrap:wrap;gap:10px}
+.store-button{display:flex;align-items:center;gap:11px;min-width:174px;padding:12px 14px;border-radius:12px;text-decoration:none;color:#fff;background:#172033;transition:transform .2s ease,box-shadow .2s ease}
+.store-button:hover{transform:translateY(-3px);box-shadow:0 9px 20px #17203322}
+.store-button small,.store-button strong{display:block}
+.store-button small{font:8px 'DM Mono',monospace;letter-spacing:.08em;opacity:.75}
+.store-button strong{font-size:14px;margin-top:3px}
+.store-icon{font-size:21px;line-height:1}
+.apple-icon{font-size:19px}
+.store-arrow{margin-left:auto;font-size:14px;opacity:.75}
+.google-play{background:#087f91}
+.app-store{background:#26344a}
+@media(max-width:850px){.app-download{align-items:flex-start;flex-direction:column}.app-download-actions{width:100%}}
+@media(max-width:460px){.app-download-actions{flex-direction:column}.store-button{width:100%;box-sizing:border-box}}
+
+
+/* Flight simulator: four key concepts in a 2 × 2 layout */
+.flight-simulator-page .concept-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+@media(max-width:460px){
+  .flight-simulator-page .concept-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+
+/* Lesson infographics */
+.lesson-infographic{
+  margin:0 0 42px;
+  padding:12px;
+  background:#fff;
+  border:1px solid #dce5f7;
+  border-radius:20px;
+  box-shadow:0 12px 32px rgba(35,65,130,.08);
+}
+.lesson-infographic img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:12px;
+}
+.lesson-infographic figcaption{
+  padding:10px 8px 2px;
+  color:#647187;
+  font-size:12px;
+  line-height:1.55;
+}
+@media(max-width:600px){
+  .lesson-infographic{padding:7px;border-radius:14px;margin-bottom:30px}
+  .lesson-infographic figcaption{font-size:11px;padding:8px 5px 2px}
+}
